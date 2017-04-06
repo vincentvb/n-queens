@@ -16,6 +16,31 @@
 
 
 window.findNRooksSolution = function(n) {
+  var indexes = []  
+  var count = n;
+  var row = [];
+  var board = [];
+  for (var i = 0; i < n; i++){
+    row.push(0);
+  }
+  for(var j = 0; j < n; j++) {
+    board.push(row);
+  }
+ 
+
+  var placeRook = function (currentSpot, currentBoard, rowNum) {
+    //start at row 1 by iterating through first row of board
+    //begin at first index and recurse, with new currentSpot at row1[currentSpot + 1]
+    //if rowNum === n
+      //return board
+    //loop through currentRow and for each index check if hasAnyRookConflicts is true
+      //if true 
+        //make board[currentRow][i] === 1 
+        //recursively call placeRook, passing in rowNum + 1, row1[currentSpot + 1], and board to keep track
+      //if false
+        //return
+
+  }
   var solution = undefined; //fixme
 
   console.log('Single solution for ' + n + ' rooks:', JSON.stringify(solution));
