@@ -162,6 +162,7 @@
      }
      checkEachRow()
     return conflict;
+    
   },
 
     // test if any major diagonals on this board contain conflicts
